@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .logo{
@@ -21,7 +22,7 @@ body {
     
     /* position: relative; */
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     background-image: url('/images/wooden-texture-looking-out-dark-background.jpg'); 
     background-size: cover;
     background-position: bottom;
@@ -32,7 +33,7 @@ body {
     justify-content: start;
     align-items: center;
     text-align: center;
-    padding-top:14rem;
+    padding-top:12rem;
     gap: 0;
 }
 
@@ -68,11 +69,11 @@ nav a:hover {
 
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 0;
 }
 .hero-text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
@@ -85,7 +86,7 @@ section{
     align-items: center;
 }
 #products{
-    width: 100%;
+    width: 90%;
     margin-bottom: 5rem;
 }
 #about{
@@ -106,7 +107,8 @@ section{
     grid-template-columns: repeat(3, 1fr); /* 3 στήλες */
     grid-gap: 20px; /* Απόσταση μεταξύ των στοιχείων */
     max-width: 1200px; /* Ορίζουμε μέγιστο πλάτος */
-    margin: 0 auto; /* Κεντράρισμα στο μέσο της σελίδας */
+    margin: 0 auto; 
+    margin-bottom: 2rem;
 }
 
 .product {
@@ -123,6 +125,26 @@ section{
     flex-direction: column;
     justify-content: center; /* Space between text and image */
     height: 350px; /* Fixed height for all cards */
+}
+.product-btn{
+    padding:  0.5rem 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.product-btn a{
+    text-decoration: none;
+    color: #a07940 ;
+}
+.product-btn:hover a{
+    color: #f1f1f1;
+}
+.product-btn:hover {
+    background-color:#a07940 ;
+    
 }
 .product h3{
     margin: 0;
@@ -223,8 +245,7 @@ section{
 }
 
 .form-container button {
-    background-color: black;
-    color: #fff;
+    color: #a07940;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -233,6 +254,7 @@ section{
 
 .form-container button:hover {
     background-color: #a07940;
+    color: white;
 }
 .form-container p{
     font-size: 1rem;
@@ -386,4 +408,139 @@ h1.show{
 h2.show{
     opacity: 1;
     transform: translateY(0);
+}
+
+
+.hero-contact{
+    position: absolute;
+    width: 100%;
+    bottom: 2rem;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 0;
+}
+.hero-contact p{
+    color: black;
+}
+.hero-contact-details, .hero-contact-location{
+    display: flex;
+    background-color: rgba(240, 248, 255,0.2);
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    width: 340px;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.hero-contact-social{
+    display: flex;
+    background-color: rgba(240, 248, 255,1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    gap: 0;
+    width: 400px;
+    height: 180px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#hero h1{
+    color: #d8d8d8;
+}
+.hero-contact h3{
+    color: #EEDAB7;
+    font-size: 2rem;
+    margin: 0;
+}
+#hero h5{
+    font-size: 1.2rem;
+    margin: 0;
+}
+.hero-contact a{
+    text-decoration: none;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    justify-content:center;
+}
+.flex-container p{
+    margin: 0;
+}
+
+@media (width<1000px) {
+.hero-contact{
+    position: absolute;
+    gap: 1rem;
+    padding-right: 0;
+    justify-content: center;
+}
+.hero-contact-details, .hero-contact-location, .hero-contact-social{
+    width: 340px;
+    height: 160px;
+}
+.hero-contact h3{
+    font-size: 28px;
+}
+.hero-contact h1{
+    font-size: 3rem;
+}
+.hero-contact a{
+    text-decoration: none;
+}
+
+}
+@media (width<550px) {
+.hero-contact p, .hero-contact h5{
+    display: none;
+}
+.bio  .hero-contact p{
+    display: block;
+}
+.hero p {
+    max-width: 300px;
+}
+.hero-right{
+    height: 520px;
+}
+.hero-contact-details, .hero-contact-location, .hero-contact-social{
+    width: 160px;
+    height: 70px;
+    padding: 1rem;
+    gap: 1rem;
+}
+.hero-contact h3{
+    font-size: 18px;
+}
+.hero h1{
+    font-size: 3rem;
+}
+.hero-contact h1{
+    font-size: 1.5rem;
+}
+.hero h2{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.hero-contact a{
+    text-decoration: none;
+}    
+.hero-contact{
+    bottom: -2rem;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 }
