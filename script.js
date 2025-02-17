@@ -16,3 +16,24 @@
 
  // Attach the scroll event listener
  window.addEventListener('scroll', handleScroll);    
+
+
+ // TEXT ANIMATION
+
+const text = document.querySelector('.text-animation');
+const cursor = document.querySelector('.cursor');
+const phrase = text.textContent;
+let index = 0;
+
+function showLetter() {
+    if (index <= phrase.length) {
+        text.textContent = phrase.slice(0, index);
+        index++;
+        setTimeout(showLetter, 50);
+    } else {
+        // Stop animation and ensure cursor blinks
+        cursor.style.display = 'inline-block';
+    }
+}
+
+showLetter();

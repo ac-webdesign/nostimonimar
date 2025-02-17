@@ -156,10 +156,17 @@ nav a:hover {
     font-weight: 500;
     margin: 0;
 }
-.hero-text p {
+.text-animation {
     font-size: 1.8rem;
+    padding: 1rem;
+    padding-right: 0.2rem;
+    height: 40px;
 }
-
+.text-animation-wrapper{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
 section{
     padding: 20px;
     max-width: 100%;
@@ -642,4 +649,18 @@ h2.show{
     justify-content: center;
     gap: 1rem;
 }
+}
+.cursor {
+    display: inline-block;
+    font-weight: bold;
+    animation: blink 0.8s step-start infinite;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
