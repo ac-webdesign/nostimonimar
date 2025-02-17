@@ -104,7 +104,7 @@ body {
     background-color: #B43237;
     color: white;
     padding: 1rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: max-content;
 }
 .pasta-image{
@@ -157,9 +157,8 @@ nav a:hover {
     margin: 0;
 }
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
-
 
 section{
     padding: 20px;
@@ -218,6 +217,8 @@ section{
     cursor: pointer;
     transition: all 0.5s ease;
     border-radius: 8px;
+    background-color: #B43237;
+    color: white;
 }
 
 .product-btn:hover {
@@ -325,7 +326,7 @@ section{
 }
 
 .form-container button {
-    color: #a07940;
+    color: white;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -549,6 +550,8 @@ h2.show{
 #hero h1{
     color: #ffffff;
     font-size: 4rem;
+    background-color: #b432366e;
+    padding: 0.5rem 2rem;
 }
 .hero-contact h3{
     color: #47371a;
