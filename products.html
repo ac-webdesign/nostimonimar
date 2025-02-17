@@ -9,91 +9,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Euphoria+Script&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">   
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            position: relative;
+            background-color: black;
+        }
+        .hero-contact{
+            position: relative;
+            bottom: -3rem;
+        }
+        .about-container{
+            margin: 0;
+            /* margin-bottom: 2rem; */
+            text-align: center;
+        }
+        .products-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 3rem;
+        }
+        
+    </style>
 </head>
 <body>
-
-    <div class="directions-header">
-        <div class="location-header"><p><i class="fas fa-map-marker-alt"></i> Παλαιοπύργου, Τρίκαλα </p>
-        </div>
         
-        <div class="phone-header"> <p><i class="fas fa-phone"></i> +2431 304700</p>
-        </div>
-        <div class="hours-header">   <p><i class="fas fa-clock"></i><b>Ώρες Λειτουργίας:</b> ΔΕΥ-ΣΑΒ 8:00 - 21:00</p>
-        </div>
-        <div class="social-header">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-instagram"></i>
-        </div>
-    </div> 
     <nav>
+
         <a href="index.html">Αρχική</a>
         <a href="#about">Ποιοι Είμαστε</a>
-        <a href="index.html"><img src="images/logo1.png" alt="Logo" class="logo"></a>
-
         <a href="products.html">Τα Προϊόντα μας</a>
         <a href="#contact">Επικοινωνία</a>
+        <!-- <img src="images/roloi_trikalwn.jpg" alt="Logo" class="logo"> -->
 
     </nav>
-    <div id="hero">
-        
-        <video autoplay muted loop id="hero-video">
-            <source src="images/wheat3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-       
-        <div class="hero-text">
-
-            <h1 class="h1">Χειροποίητα Ζυμαρικά Τρικάλων</h1>
-            <p>Αυθεντική Γεύση και Ποιότητα <br></p>
-            <button class="product-btn">Ανακαλύψτε τα Προϊόντα μας!</button>
-        </div>
-
-        <!-- <div class="hero-contact">
-            <div class="hero-contact-details">
-                <div>
-                    <h3 class="h2"><i class="fas fa-phone"></i></h3 class="h2">
-                </div>
-                <div class="flex-container">
-                    <h5>Καλέστε μας για παραγγελίες</h5>
-                    <a href="tel:+306908293001">
-                        <h3>6908293001</h3>
-                    </a>
-                    <p></p>
-                </div>
-            </div>
-            <div class="hero-contact-location">
-                <div>
-                    <h3 class=""><i class="fas fa-map-marker-alt"></i></h3>
-                </div>
-                <div class="flex-container">
-                    <h5>Θα μας βρείτε:</h5>
-                    <a href="https://www.google.com/maps/place/Trikala,+Greece/@39.555888,21.767911,13z">
-                        <h3>Τρίκαλα  
-                        </h3>
-                    </a>
-                </div>
-            </div>
-        </div> -->
-    </div>
     
-
+    
     <section id="about" style="background-color: #F8F7F4;">
         <img src="images/logo1.png" alt="">
-        <div class="about-container">
-            <h2>Ποιοι Είμαστε</h2>
-            <p>Η επιχείρησή μας, <strong>Νόστιμον Ήμαρ</strong>, γεννήθηκε στα όμορφα και γραφικά Τρίκαλα. Με αφοσίωση στην παράδοση και τη γεύση, δημιουργούμε ζυμαρικά που συνδυάζουν την αυθεντικότητα των παραδοσιακών συνταγών με την αγνότητα των καλύτερων υλικών.</p>
-            <p>Το όνομά μας, εμπνευσμένο από την αρχαία ελληνική έκφραση που σημαίνει "νόστιμη μέρα", αντικατοπτρίζει την επιθυμία μας να κάνουμε κάθε σας γεύμα μια πραγματικά απολαυστική εμπειρία.</p>
-            <p>Στο <strong>Νόστιμον Ήμαρ</strong>, δίνουμε έμφαση στη χειροποίητη παραγωγή ζυμαρικών, επιλέγοντας μόνο τα πιο αγνά τοπικά υλικά, όπως αλεύρι υψηλής ποιότητας, φρέσκα αυγά και βότανα από τον θεσσαλικό κάμπο. Η διαδικασία μας συνδυάζει την παραδοσιακή τεχνογνωσία με σύγχρονες πρακτικές, διασφαλίζοντας την υψηλή ποιότητα και μοναδική γεύση των προϊόντων μας.</p>
-            <p>Από τις πλούσιες παπαρδέλες μέχρι το αρωματικό κριθαράκι με κρόκο Κοζάνης, κάθε ζυμαρικό μας είναι φτιαγμένο με μεράκι, ώστε να φέρει στο τραπέζι σας τη μαγεία της αυθεντικής ελληνικής γαστρονομίας.</p>
-            <p>Η αποστολή μας είναι να σας προσφέρουμε προϊόντα που "μυρίζουν" Ελλάδα, μεταφέροντας τη φιλοσοφία μας για την αγάπη στο φαγητό και την παράδοση. Σας προσκαλούμε να γνωρίσετε την οικογένεια των προϊόντων μας και να γίνετε μέρος της δικής μας ιστορίας.</p>
-        </div>
+        <h2>Τα Προϊόντα μας</h2>
+            <div class="about-container">
+                <p>Ανακαλύψτε παραδοσιακά, χειροποίητα ζυμαρικά φτιαγμένα με αγνά, φρέσκα υλικά από την ελληνική γη. Χωρίς συντηρητικά, με σεβασμό στην παράδοση και τη διατροφική αξία, προσφέρουμε τη γεύση και την ποιότητα που αξίζετε.</p>
+            </div>
     </section>
-    
 
     <section id="products">
         <div class="products-container">
-            <h2>Τα Προϊόντα μας</h2>
+
+            
             <div class="products-grid">
                 <div class="product">
                     <img src="images/papardeles.png" alt="Παπαρδέλες">
@@ -131,7 +98,33 @@
                 </div>
             </div>
         </div>
-        <a href="products.html"><button class="product-btn">Δείτε όλα τα προϊόντα</button></a>
+        <button class="product-btn"><a href="products.html">Δείτε όλα τα προϊόντα</a></button>
+        <div class="hero-contact">
+            <div class="hero-contact-details">
+                <div>
+                    <h3 class="h2"><i class="fas fa-phone"></i></h3 class="h2">
+                </div>
+                <div class="flex-container">
+                    <h5>Καλέστε μας για παραγγελίες</h5>
+                    <a href="tel:+306908293001">
+                        <h3>6908293001</h3>
+                    </a>
+                    <p></p>
+                </div>
+            </div>
+            <div class="hero-contact-location">
+                <div>
+                    <h3 class=""><i class="fas fa-map-marker-alt"></i></h3>
+                </div>
+                <div class="flex-container">
+                    <h5>Θα μας βρείτε:</h5>
+                    <a href="https://www.google.com/maps/place/Trikala,+Greece/@39.555888,21.767911,13z">
+                        <h3>Τρίκαλα  
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
     
 
