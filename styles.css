@@ -282,14 +282,18 @@ section{
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
+    height: 740px;
 }
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     overflow: hidden;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
 }
 
 .map-container {
@@ -303,14 +307,14 @@ section{
 }
 
 .form-container {
-    padding: 3rem 4rem;
+    padding: 0 4rem 3rem;
     margin: 0;
 }
 
 .form-container h2 {
     color: black;
     margin-bottom: 1rem;
-    
+    font-size: 2rem;
 }
 
 .form-container form {
