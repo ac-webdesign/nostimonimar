@@ -109,6 +109,9 @@ body {
     font-size: 1.2rem;
     width: max-content;
 }
+.hero-text p{
+    max-width: 1000px;
+}
 .pasta-image{
     max-width: 500px; 
     /* background-color: #264653; */
