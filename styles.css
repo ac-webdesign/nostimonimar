@@ -688,7 +688,6 @@ h2.show{
     }
 }
 
-
 @keyframes blink {
     50% {
         opacity: 0;
